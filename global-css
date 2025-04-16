@@ -1,0 +1,159 @@
+.service-form select option {
+  background-color: #202347;
+  color: #ffff;
+}
+.service-form input::placeholder {
+  color: #cdcfe9; /* General rule for modern browsers */
+}
+
+.service-form input::-webkit-input-placeholder {
+  color: #cdcfe9; /* For Chrome, Safari, and Opera */
+}
+
+.service-form input:-ms-input-placeholder {
+  color: #cdcfe9; /* For Internet Explorer 10-11 */
+}
+
+.service-form input::-ms-input-placeholder {
+  color: #cdcfe9; /* For Edge */
+}
+
+.service-form-input.input-error {
+  border: 1px solid red;
+}
+.service-form-input.input-valid {
+  border: 1px solid #2cee91;
+}
+.service-f-btn:disabled {
+  background-color: #ccc; /* Gray when disabled */
+  color: #888; /* Lighter text color */
+  cursor: not-allowed; /* Disable pointer */
+}
+
+/* table css */
+/* General Table Styling */
+.responsive-table-wrapper {
+  width: 100%;
+  overflow-x: auto; /* Enables horizontal scrolling for small screens */
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.responsive-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 16px;
+  border: 1px solid #ddd;
+}
+
+.responsive-table th,
+.responsive-table td {
+  text-align: left;
+  padding: 12px;
+  border: 1px solid #ddd;
+  vertical-align: top;
+}
+
+.responsive-table th {
+  background-color: #161936;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.responsive-table td strong {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+/* Responsive Design for Smaller Screens */
+@media screen and (max-width: 768px) {
+  .responsive-table thead {
+    display: none; /* Hide table headers */
+  }
+
+  .responsive-table tr {
+    display: block;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+  }
+
+  .responsive-table td {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 12px;
+    position: relative;
+  }
+
+  .responsive-table td::before {
+    content: attr(data-label); /* Use data-label attribute as cell headers */
+    font-weight: semi-bold;
+    text-transform: uppercase;
+    flex: 0 0 40%;
+    padding-right: 10px;
+  }
+
+  .responsive-table td:last-child {
+    border-bottom: none;
+  }
+}
+
+/* final table styling */
+/* new table styling */
+.new-table-wrapper {
+  overflow-x: auto; /* Enable horizontal scrolling */
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+/* Table styles */
+.new-table {
+  width: 100%; /* Ensure the table fills the wrapper */
+  border-collapse: collapse; /* Remove gaps between table borders */
+  border: 1px solid #393e72; /* Add a subtle border */
+  text-align: left; /* Align text to the left */
+}
+
+/* Table header */
+.new-table th {
+  padding: 12px;
+  background-color: #010d2d; /* Light gray background for header */
+  border: 1px solid #393e72;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* Table cells */
+.new-table td {
+  padding: 12px;
+  border: 1px solid #393e72;
+  word-wrap: break-word; /* Allow breaking of long text */
+  max-width: 450px; /* Maximum width for data cells */
+  font-size: 1.125rem;
+}
+
+/* Responsive tweaks */
+@media screen and (max-width: 768px) {
+  .new-table-wrapper {
+    overflow-x: auto; /* Enable horizontal scroll for smaller screens */
+  }
+
+  .new-table td,
+  .new-table th {
+    white-space: normal; /* Allow wrapping on smaller screens */
+    min-width: 300px; /* Set max-width for better table layout */
+    max-width: max-content;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* For very small screens, adjust max-width of table data */
+  .new-table td,
+  .new-table th {
+    min-width: 200px !important;
+    width: 100%;
+  }
+}
