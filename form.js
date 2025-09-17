@@ -1,3 +1,4 @@
+/*
 // Validation utility functions
 const isEmailValid = (email) => {
   const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
@@ -141,6 +142,7 @@ document.addEventListener("DOMContentLoaded", () => {
   formTypes.forEach((formType) => new FormHandler(formType));
 });
 
+*/
 // reading time handler
 document.addEventListener("DOMContentLoaded", function () {
   const blogCards = document.querySelectorAll(".blog-card");
