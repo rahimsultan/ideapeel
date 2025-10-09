@@ -107,6 +107,9 @@
   width: 100%;
   max-width: 100%;
   margin-bottom: 1.5rem;
+  background: #222542;
+  border-radius: 1rem;
+  border: 1px solid #393e72;
 }
 
 /* Table styles */
@@ -115,6 +118,8 @@
   border-collapse: collapse; /* Remove gaps between table borders */
   border: 1px solid #393e72; /* Add a subtle border */
   text-align: left; /* Align text to the left */
+  border-radius: 1rem;
+  overflow: hidden;
 }
 
 /* Table header */
@@ -122,8 +127,12 @@
   padding: 12px;
   background-color: #010d2d; /* Light gray background for header */
   border: 1px solid #393e72;
-  font-weight: 600;
+  font-weight: 500;
   text-align: center;
+  color: #fff;
+  line-height: 120%;
+  letter-spacing: 0.01875rem;
+  font-size: 1.25rem;
 }
 
 /* Table cells */
@@ -132,7 +141,10 @@
   border: 1px solid #393e72;
   word-wrap: break-word; /* Allow breaking of long text */
   max-width: 450px; /* Maximum width for data cells */
-  font-size: 1.125rem;
+  font-size: 1rem;
+  color: #CDCFE9;
+  line-height: 150%; 
+  letter-spacing: 0.035rem;
 }
 
 /* Responsive tweaks */
@@ -156,4 +168,7 @@
     min-width: 200px !important;
     width: 100%;
   }
+  .new-table th {
+  font-size: 1.125rem;
+}
 }
